@@ -1,0 +1,57 @@
+* {
+    padding: 2px;
+    margin-top: 10px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    box-shadow: 1px 5px 15px green;
+}
+.sub_content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.search_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 30px;
+    height: 50px;  
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    border-style: outset;
+
+    box-shadow: 30px -15px 10px grey;
+}
+.all_photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-height: 90%;
+    max-width: 90%;
+    
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    justify-content: center;
+    align-items: center;
+}
+.photo-image {
+    max-height: 80%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+.failed_user {
+    font-size: 16px;
+    font-weight: 700;
+}

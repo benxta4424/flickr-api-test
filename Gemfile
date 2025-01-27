@@ -58,3 +58,4 @@ end
 
 gem "flickr"
 gem "figaro"
+gem "rails_live_reload"
