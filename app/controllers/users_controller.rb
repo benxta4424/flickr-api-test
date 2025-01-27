@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def index
     begin
       if !params[:user_id].nil?
-        @photos=@flickr.photos.search(user_id: params[:user_id])
+        @photos=@flickr.photos.search(user_id: params[:user_id], per_page: 10)
       end
     rescue Flickr::FailedResponse
       flash[:error] = "Failed to fetch photos. Please check the User ID."
