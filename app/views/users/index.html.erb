@@ -1,1 +1,19 @@
 <%= render partial:"form" %>
+
+<% if !@photos.nil? %>
+    <div class="failed_user">
+        <%= "Users's photos:#{params[:user_id]}"  %>
+    </div>
+
+    <div class="all_photos">
+        <% @photos.each do |photo| %>
+
+        <div class="photo-item">
+            <%= image_tag "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg", alt: photo.title, class: "photo-image" %>
+        </div>
+
+        <% end %>
+    </div>
+<% else %>
+    <%= flash[:error] %>
+<% end %>

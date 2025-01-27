@@ -1,6 +1,8 @@
-<%= form_with url:users_path ,method: :get do |f| %>
-    <%= f.label :user_id %>
-    <%= f.text_field :user_id %>
+<div class="search_form">
+    <%= form_with url:users_path ,method: :get do |f| %>
+        <%= f.label :user_id %>
+        <%= f.text_field :user_id %>
 
-    <%= f.submit "Search User" %>
-<% end %>
+        <%= f.submit "Search User" %>
+    <% end %>
+</div>
