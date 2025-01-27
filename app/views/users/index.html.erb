@@ -1,8 +1,12 @@
-<%= render partial:"form" %>
+<div class="content">
+
+<div class="sub_content">
+    <%= render partial:"form" %>
+</div>
 
 <% if !@photos.nil? %>
     <div class="failed_user">
-        <%= "Users's photos:#{params[:user_id]}"  %>
+        <%= " #{params[:user_id]}'s photos: "  %>
     </div>
 
     <div class="all_photos">
@@ -10,6 +14,7 @@
 
         <div class="photo-item">
             <%= image_tag "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg", alt: photo.title, class: "photo-image" %>
+
         </div>
 
         <% end %>
@@ -17,3 +22,4 @@
 <% else %>
     <%= flash[:error] %>
 <% end %>
+</div>
