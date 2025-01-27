@@ -1,4 +1,6 @@
-<%= form_with url:user_path do |f| %>
+<%= form_with url:users_path ,method: :get do |f| %>
     <%= f.label :user_id %>
     <%= f.text_field :user_id %>
+
+    <%= f.submit "Search User" %>
 <% end %>
